@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace _3_homework
         }
         public void PrintInfo()
         {
-            Console.WriteLine("부품:");
+            //Console.WriteLine("부품:");
             Console.WriteLine($"> {PartName} (Price : {Price})");
         }
     }

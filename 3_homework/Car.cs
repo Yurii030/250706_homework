@@ -8,14 +8,15 @@ namespace _3_homework
 {
     internal class Car
     {
-        public string Models;
         private int index = 0;
-        Engine Engine;
+        public Engine Engine { get; set; }
         Part[] parts = new Part[3];
-
-        public Car()
+        public string name;
+        
+        public Car(string name, Engine engine)
         {
-
+            this.name = name;
+            Engine = engine;
         }
 
         public virtual void AddPart(Part part)
@@ -27,9 +28,15 @@ namespace _3_homework
             }
         }
 
-        public virtual void PrintPartInfo() 
+        public virtual void PrintInfo() 
         {
-            foreach(Part part in parts) { 
+            Console.WriteLine($"자동차 : {name}");
+            if(Engine != null)
+            {
+                Engine.PrintInfo();
+            }
+            Console.WriteLine("부품:");
+            foreach (Part part in parts) { 
                 if(part != null)
                 {
                     part.PrintInfo();
