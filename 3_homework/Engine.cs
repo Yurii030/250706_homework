@@ -17,7 +17,7 @@ namespace _3_homework
         public int HorsePower { get; set; }
         public string Type { get; set; } 
 
-        // 엔진부분 프린트
+        
         public void PrintInfo()
         {
             Console.WriteLine($"엔진 : {HorsePower}cc {Type}");

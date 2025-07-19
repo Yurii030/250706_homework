@@ -10,11 +10,11 @@ namespace _3_homework
     {
         public GasolineCar(string name,Engine engine) : base(name,engine) { } 
         // 해당 키워드를 사용하는 클래스 부모 클래스를 가리키는것  : base()
-        // 가솔린 프린트
+        
         public override void PrintInfo()
         {
             Console.WriteLine($"- 휘발유 자동차 : {name}");
-            base.PrintInfo(); // 기본클래스 메서드 호출
+            base.PrintInfo(); 
 
         }
     }

@@ -28,7 +28,7 @@ namespace _3_homework
             }
         }
 
-        // 자동차,부품 프린트 위치 여기 수정
+        
         public virtual void PrintInfo() 
         {
             Console.WriteLine($"자동차 : {name}");

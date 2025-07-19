@@ -19,7 +19,6 @@ namespace _3_homework
         }
         public void PrintInfo()
         {
-            //Console.WriteLine("부품:");
             Console.WriteLine($"> {PartName} (Price : {Price})");
         }
     }
